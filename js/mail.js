@@ -24,7 +24,7 @@ console.log("Mail Utente", userMail);
 
 // -----------------------------
 
-// lista mail autorizzate
+// lista mail autorizzate (array)
 
 var authorizedMails = ["francesco@mail.it", "giovanni@mail.it", "giorgio@mail.it", "lorenzo@mail.it", "claudio@mail.it"];
 console.table(authorizedMails);
@@ -39,7 +39,7 @@ var messageMail = document.getElementById("message-mail");
 
 // condizione if per indirizzi mail
 
-if (userMail == authorizedMails[0]) {
+/* if (userMail == authorizedMails[0]) {
     console.log("la tua mail è corretta, puoi entrare nella tua webmail!");
     messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
 } else if (userMail == authorizedMails[1]) {
@@ -58,3 +58,20 @@ if (userMail == authorizedMails[0]) {
     messageMail.innerHTML = ("Mi dispiace, la tua mail non è corretta. Riprova");
     alert("la tua mail non è corretta. Riprova!");
 }
+ */
+
+// -----------------------
+
+// condizione con ciclo 
+
+for (var i = 0; i < authorizedMails.length; i++){
+    if (authorizedMails[i] === userMail) {
+        console.log("la tua mail è corretta, puoi entrare nella tua webmail!");
+        messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
+    } else {
+        messageMail.innerHTML = ("Mi dispiace, la tua mail non è corretta. Riprova");
+        alert("la tua mail non è corretta. Riprova!");
+    }
+}
+
+// -----------------------
