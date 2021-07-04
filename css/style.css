@@ -8,3 +8,9 @@
 #outcome{
     margin: 50px;
 }
+
+#roll-dice-1,
+#roll-dice-2{
+    margin-left: 50px;
+}
+

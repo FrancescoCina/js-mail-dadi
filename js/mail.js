@@ -63,15 +63,15 @@ var messageMail = document.getElementById("message-mail");
 // condizione con ciclo 
  
 
-var flag = false;
+var isAuthorized = false;
 
 for (var i = 0; i < authorizedMails.length; i++){
     if (userMail == authorizedMails[i]) {
-        flag = true;
+        isAuthorized = true;
     }
 }
 
-if (flag == true) {
+if (isAuthorized) {
     console.log("la tua mail è corretta, puoi entrare nella tua webmail");
     messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
 } else {

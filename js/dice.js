@@ -17,7 +17,10 @@ console.log("Js OK");
 */
 
 var player1 = Math.floor(Math.random() * 6 + 1);
+document.getElementById("roll-dice-1").innerHTML = "Il primo utente ha il numero: " + player1;
 var player2 = Math.floor(Math.random() * 6 + 1);
+document.getElementById("roll-dice-2").innerHTML = "Il secondo utente ha il numero: " + player2;
+
 
 var outcome = document.getElementById("outcome");
 
