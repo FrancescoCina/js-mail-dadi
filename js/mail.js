@@ -17,7 +17,7 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 // prendo la mail dall'utente
 
-var userMail = prompt("Insersci la tua mail.");
+var userMail = (prompt("Insersci la tua mail.")).trim();
 console.log("Mail Utente", userMail);
 
 // -----------------------------
@@ -34,34 +34,7 @@ console.table(authorizedMails);
 var messageMail = document.getElementById("message-mail");
 // console.log("stampa messaggio", messageMail);
 
-
-// condizione if per indirizzi mail
-/* 
- if (userMail == authorizedMails[0]) {
-    console.log("la tua mail è corretta, puoi entrare nella tua webmail!");
-    messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
-} else if (userMail == authorizedMails[1]) {
-    console.log("la tua mail è corretta, puoi entrare nella tua webmail!");
-    messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
-} else if (userMail == authorizedMails[2]) {
-    console.log("la tua mail è corretta, puoi entrare nella tua webmail!");
-    messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
-} else if (userMail == authorizedMails[3]) {
-    console.log("la tua mail è corretta, puoi entrare nella tua webmail!");
-    messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
-} else if (userMail == authorizedMails[4]) {
-    console.log("la tua mail è corretta, puoi entrare nella tua webmail!");
-    messageMail.innerHTML = ("La tua mail è corretta, puoi entrare nella tua webmail!");
-} else {
-    messageMail.innerHTML = ("Mi dispiace, la tua mail non è corretta. Riprova");
-    alert("la tua mail non è corretta. Riprova!");
-}
- */
-
-// -----------------------
-
 // condizione con ciclo 
- 
 
 var isAuthorized = false;
 
@@ -79,8 +52,4 @@ if (isAuthorized) {
     messageMail.innerHTML = ("Mi dispiace, la tua mail non è corretta. Riprova");
 }
 
-
 // -----------------------
-
-
-
